@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 const app = express();
 const PORT = process.env.PORT || 4333;
 
-app.get("/testando", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
   res.status(200).json({ message: "Funcionando." });
 });
 
